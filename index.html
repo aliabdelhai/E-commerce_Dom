@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="nav-wrapper">
+
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+                <div class='aboutUS' onclick="aboutUS()">About Us</div>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <div class='all' onclick="allProducts()">all products</div>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <div class='cart-page' onclick="cart()">cart: 2</div>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                ALI PRODUCTS
+            </div>
+        </div>
+    </div>
+    <div class='content-container'>
+
+        <h1 class='container'>Everything you love about our stores is online.</h1>
+        <h2 class='subTitle'>Chat with Specialists. Apple Trade In. No-contact delivery. And Apple Support. All right here.</h2>
+        <div class='sub-container'>
+            <div id="products"></div>
+        </div>
+    </div>
+
+
+    <script src="render.js"></script> <!-- You'll create this soon -->
+    <script src="logic.js"></script> <!-- You've got this -->
+    <script src="main.js"></script>
+    
+</body>
+</html>

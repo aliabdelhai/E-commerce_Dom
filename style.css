@@ -1,0 +1,146 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color:rgb(235, 235, 235);
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+h1{
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal; 
+    line-height: 48px; 
+}
+
+.subTitle { 
+    font-size: 20px; 
+    font-weight: 300; 
+    color: #ffcc66; 
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+}
+
+
+
+.product{
+    box-shadow: 1px 1px 3px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.all{
+    cursor: pointer;
+
+}
+
+.cart-page{
+    cursor: pointer;
+    
+}
+
+.aboutUS
+{
+    cursor: pointer;
+}
+
+.US{
+    margin: 10px;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 1px 1px 3px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    line-height: 26pt;
+
+}
+
+.Add-to-cart{
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: royalblue;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred
+}
+
+
+.DeleteFromCart{
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: royalblue;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+
+}
