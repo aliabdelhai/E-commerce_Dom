@@ -6,7 +6,13 @@ const Renderer = function(){
         $('#products').empty()
         for(let product of products)
         {
-            let productBox = $(`<div class="product"><p class="product-name">Product: ${product.name}</p><p class="product-price">Price: ${product.price}</p><p class="product-img">${product.img}</p><button class="Add-to-cart">Add to cart</button></div>`)
+            let productBox = 
+            $(`<div class="product">
+            <p class="name">Product: ${product.name}</p>
+            <p class="price">Price: ${product.price}</p>
+            <p class="img1"><img src="${product.img}"></p>
+            <p class="click"><button class="Add-to-cart">Add to cart</button><p>
+            </div>`)
             $("#products").append(productBox)
         }
     }
@@ -15,7 +21,13 @@ const Renderer = function(){
         $('#products').empty()
         for(let product of cart)
         {
-            let productBox = $(`<div class="product"><p class="product-name">Product: ${product.name}</p><p class="product-price">Price: ${product.price}</p><p class="product-img">${product.img}</p><button class="DeleteFromCart">Delete from cart</button></div>`)
+            let productBox =
+             $(`<div class="product">
+             <p class="name">Product: ${product.name}</p>
+             <p class="price">Price: ${product.price}</p>
+             <p class="img1"><img src="${product.img}"</p>
+             <p class="click"><button class="DeleteFromCart">Delete from cart</button></p>
+             </div>`)
             $("#products").append(productBox)
         }
         
