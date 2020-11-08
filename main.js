@@ -29,13 +29,13 @@ const aboutUS = function()
 }   
 
 $('#products').on('click', '.Add-to-cart', function(){
-    const str1 = $(this).closest('.product').find('.product-name').text()
+    const str1 = $(this).closest('.product').find('.name').text()
     let str2 = str1.split(" ")
     let name = str2[1]
-    let str3 = $(this).closest('.product').find('.product-price').text()
+    let str3 = $(this).closest('.product').find('.price').text()
     let str4 = str3.split(" ")
     let price = str4[1]
-    let img = $(this).closest('.product').find('.product-img').text()
+    let img = $(this).closest('.product').find('.img1 img').attr("src")
     let obj = {name: name, price: price, img:img}
     Ecommerce.addToCart(obj)
     $('.cart-page').text(`cart: ${Ecommerce.getItems()}`)
@@ -45,17 +45,16 @@ $('#products').on('click', '.Add-to-cart', function(){
 
 
 $('#products').on('click', '.DeleteFromCart', function(){
-    const str1 = $(this).closest('.product').find('.product-name').text()
+    const str1 = $(this).closest('.product').find('.name').text()
     let str2 = str1.split(" ")
     let name = str2[1]
-    let str3 = $(this).closest('.product').find('.product-price').text()
+    let str3 = $(this).closest('.product').find('.price').text()
     let str4 = str3.split(" ")
     let price = str4[1]
-    let img = $(this).closest('.product').find('.product-img').text()
+    let img = $(this).closest('.product').find('.img1 img').attr("src")
     let obj = {name: name, price: price, img:img}
     Ecommerce.deleteFromCart(obj)
     renderer.renderCartProducts(Ecommerce.getCart())
     $('.cart-page').text(`cart: ${Ecommerce.getItems()}`)
 
 })
-
