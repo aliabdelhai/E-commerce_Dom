@@ -1,4 +1,5 @@
 
+
 const ECommerce = function()
 {
 
@@ -6,15 +7,15 @@ const ECommerce = function()
 
     const cart = [
         {name: 'mac', price: 9000, img:"images/mac.jpeg"},
-        {name: 'iphone', price: 5000, img:"images/iphone.jpeg"}
+        {name: 'iphone', price: 5000, img:"images/iphone.png"}
     ]
 
     const products = [
         {name: 'mac', price: 9000, img: "images/mac.jpeg"},
-        {name: 'iphone', price: 5000, img:"images/iphone.jpeg"},
-        {name: 'airpods', price: 1000, img:"images/airpods.jpeg"},
-        {name: 'ipad', price: 3000, img:"images/ipad.jpeg"},
-        {name: 'appleWatch', price: 2000, img:"images/appleWatch.jpeg"}
+        {name: 'iphone', price: 5000, img:"images/iphone.png"},
+        {name: 'airpods', price: 1000, img:"images/airpods.jpg"},
+        {name: 'ipad', price: 3000, img:"images/ipad.jpg"},
+        {name: 'appleWatch', price: 2000, img:"images/appleWatch.jpg"}
     ]
 
     const getProducts = () => products
